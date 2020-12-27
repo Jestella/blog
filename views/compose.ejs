@@ -1,0 +1,25 @@
+
+<%- include('partials/header'); -%>
+  <h1 class="title">Compose</h1>
+  <form class="" action="/compose" method="post">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Title</label>
+      <input type="text" class="form-control" name="postTitle">
+      <label for="exampleInputPassword1">Post</label>
+      <textarea name="postBody" class="form-control" rows="15" cols="50"></textarea>
+    <label for="select-category">Category</label>
+    <select class="custom-select" id="category" required>
+      <option value>Choose...</option>
+      <option>blog</option>
+      <option>share</option>
+    </select>
+    <div class="invalid-feedback">Please select a valid category.
+    </div>
+  </div>
+
+    <button type="submit" class="btn btn-dark">Publish</button>
+  </form>
+
+
+
+<%- include('partials/footer'); -%>

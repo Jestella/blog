@@ -1,0 +1,64 @@
+<%- include('partials/header'); -%>
+
+<main role="main" class="container">
+<div class="row">
+
+
+<!--------- main ---------->
+
+<div class="col-md-10 blog-main">
+
+  <div class="blog-post">
+
+<%  posts.forEach(function(post){ %>
+
+<h2 class="page-title"><%=post.title%></h2>
+<p class="blog-post-meta">
+  "December 18, 2020 by "
+  <a href="#">Stella</a>
+</p>
+<p class="blog-content">
+  <%=post.content%>
+</p>
+<%  }) %>
+</div>
+
+<nav class="blog-pagination">
+  <a class="btn btn-outline-dark" href="#"><</a>
+  <a class="btn btn-outline-dark" href="#">></a>
+</nav>
+
+</div>
+
+
+<!---------- side -------------->
+
+<aside class="col-md-2 blog-sidebar">
+  <div class="p-4 mb-2 bg-light rounded">
+    <h5>About</h5>
+    <p class="blog-about">
+    hiiiii</br>
+    hiiiiiiii</p>
+    <p class="blog-about">by jestella</p>
+  </div>
+  <div class="blog-nav p-4">
+    <h5>category</h5>
+
+
+<div class="blog-side">
+
+    <nav class="blog-nav-category">
+      <a href="#all" class="verticals-listitem-link">all</a><br>
+      <a href="#category1" class="blog-nav-link">coding</a><br>
+      <a href="#category2" class="verticals-listitem-link">life</a><br>
+      <a href="#category3" class="verticals-listitem-link">travel</a><br>
+      <a href="#category4" class="verticals-listitem-link">stock</a>
+    </nav>
+  </div>
+</div>
+</aside>
+
+</div>
+</main>
+</section>
+<%- include('partials/footer'); -%>

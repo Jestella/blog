@@ -1,0 +1,33 @@
+
+<%- include('partials/header'); -%>
+<h1 class="title">Share</h1>
+<p class="title-share"><%= startingContent %></p>
+
+<div class="share-main">
+
+  <div class="share-post">
+
+<%  posts.forEach(function(post){ %>
+
+<h2 class="page-title"><%=post.title%></h2>
+<p class="share-post-meta">
+  "December 18, 2020 by "
+  <a href="#">Stella</a>
+</p>
+<p class="blog-content">
+  <%=post.content%>
+</p>
+<%  }) %>
+</div>
+
+<nav class="blog-pagination">
+  <a class="btn btn-outline-primary" href="#">Older</a>
+  <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+</nav>
+
+</div>
+
+
+
+
+<%- include('partials/footer'); -%>
