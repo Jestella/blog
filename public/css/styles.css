@@ -1,9 +1,28 @@
-/*
-font-family: 'Noto Sans JP', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Playfair Display', serif;
+/* font
+font-family: 'Noto Sans KR', sans-serif; 400, 700, 900
+font-family: 'Open Sans', sans-serif; 400, 600, 700, 800, 800i
+font-family: 'Playfair Display', serif; 500, 700, 800i
 */
 
+/* Main & Title | font-family: 'Open Sans', sans-serif; */
+.navbar-brand, .text-main2, h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.text-main1, .jieun {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+
+
+/* font-family: 'Noto Sans JP', sans-serif; */
+
+
+
+
+
+/* font-family: 'Playfair Display', serif; */
 
 body {
   background-color: #fff;
@@ -20,13 +39,12 @@ body ::selection {
 }
 
 .container-fluid {
-  padding: 2% 7%;
+  padding: 2% 6%;
 }
 
 h1 {
   color: #373a40;
   font-size: 2.5rem;
-  font-family:'Open Sans', sans-serif;
 }
 
 
@@ -52,10 +70,17 @@ h1 {
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: .75rem;
   letter-spacing: 1.5px;
-  padding: 0 0 5%;
+  padding: 0 0 6%;
 }
+
+
+.navbar-brand {
+  font-size: .85rem;
+}
+
+
 
 
 /* Navbar hover */
@@ -80,6 +105,72 @@ h1 {
   width: 100%;
   left: 0;
   transform: scale(.8);
+}
+
+
+/* search bar */
+
+*{
+    box-sizing: border-box;
+}
+.main-section{
+    text-align:center;
+}
+.openSearchBtn{
+    border: 0;
+    color: #6e6d6d;
+}
+.openSearchBtn:hover {
+    color: #000;
+}
+.layout{
+    height: 30%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+.layout-content {
+    position: relative;
+    top: 35%;
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+.layout .layoutclosebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.layout input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+}
+.layout input[type=text]:hover {
+    background: #f1f1f1;
+}
+.layout button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.layout button:hover {
+    background: #bbb;
 }
 
 
@@ -167,19 +258,9 @@ text-align: center;
 
 .video-header {
   text-align: center;
-  padding: 3% 0 0;
+  padding: 7% 0 0;
 }
 
-
-
-
-.text-main1, .jieun, .text-main2 {
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
-.text-main1, .jieun {
-  font-weight: 700;
-}
 
 .text-main1 {
   color: #f9813a;
@@ -204,13 +285,15 @@ text-align: center;
 
 /***** Home Section2 Portfolio *****/
 
-#home_portfolio {
-  padding: 20% 30%;
+
+
+.portfolio_box {
+  padding: 20% 0;
   background-color: #262626;
   opacity: .9;
 }
 
-.home_portfolio_text {
+.home-portfolio-text {
   color: #fff;
   text-align: center;
 }
@@ -221,15 +304,20 @@ text-align: center;
 
 /***** Home Section3 Blog *****/
 
-#home_blog {
-  padding: 20% 3%;
+.home-blog-box {
+  margin: 0;
 }
+
+
+.home-blog-text {
+  padding: 20% 0 0;
+}
+
 
 .blog-box {
   padding: 15%;
   margin: 0;
   opacity: .95;
-
 }
 
 .box1 {
@@ -244,13 +332,22 @@ text-align: center;
   background-color: #f7dad9;
 }
 
+.home-readmore-btn {
+  font-size: .6rem;
+  text-align: left;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  color: #6e6d6d;
+}
 
 
 
 /***** About Page *****/
 
 .about {
-  padding: 5% 0 15%;
+  padding: 5% 0 20%;
 }
 
 .about-content {
@@ -259,7 +356,7 @@ text-align: center;
 }
 
 .about-profile-image {
-  width:41%;
+  width:27rem;
   padding: 0 0 1%;
 }
 
@@ -268,13 +365,15 @@ text-align: center;
 }
 
 .about-list {
-  padding: 0 0 7%;
+  padding: 7% 0;
 }
 
 .about-webdeveloper {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 500;
 }
+
+
 
 .social-icon {
   color: #707070;
@@ -317,31 +416,17 @@ text-align: center;
 
 /***** Blog page *****/
 
+.blog-page-title {
+  padding: 5% 0 0;
+}
+
+.blog-content {
+  padding: 0 0 5%;
+}
+
 .blog-nav-category {
   text-align: center;
 }
-
-.blog-nav-item {
-  margin: 0 1%
-}
-
-
-
-/* Add a light grey background on mouse-over */
-
-
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-/* Add a dark background to the active button */
-.btn.active {
-  background-color: #666;
-  color: #fff;
-}
-
-
 
 
 .blog-about {
@@ -382,6 +467,10 @@ footer {
 
 @media (max-width: 600px) {
 
+.fixed-top {
+  position: relative;
+}
+
 .video-header {
   padding: 25% 0 0;
 }
@@ -397,4 +486,6 @@ footer {
   letter-spacing: 1.9rem;
   padding-left: 2%;
 }
+
+
 }

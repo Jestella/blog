@@ -18,8 +18,7 @@
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Open+Sans:wght@600&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&family=Playfair+Display:ital,wght@0,500;0,700;1,800&display=swap" rel="stylesheet">
 
   <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -29,17 +28,16 @@
 <section id="entire-body">
   <div class="container-fluid">
     <!-- Bootstrap navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container-fluid navbar-container fixed-top">
+        <a class="navbar-brand" href="/">JE.STELLA<span class="sr-only">(current)</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="/"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lightning-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
-              </svg> JE.STELLA<span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="/about">ABOUT</a>
           </li>
@@ -50,23 +48,42 @@
             <a class="nav-link" href="/blog">BLOG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/share">SHARE</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+<!-- search box -->
 
 
-<a id="ac-gn-link-search" class="ac-gn-link ac-gn-link-search" href="/search" data-analytics-title="search" data-analytics-click="search" data-analytics-intrapage-link="" aria-label="Search apple.com" role="button" aria-haspopup="true"></a>
-          <button class="btn btn-default my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-        </form>
+<div id="mylayout" class="layout">
+  	<span class="layoutclosebtn" onclick="closeSearch()" title="Close layout">×</span>
+  	<div class="layout-content">
+    	<form action="http://stella-lee.com" target="_blank">
+      		<input type="text" placeholder="Type to search" name="search">
+      		<button type="submit"><i class="fas fa-search"></i></button>
+    	</form>
+  	</div>
+</div>
+<div class="main-section">
+	<button class="openSearchBtn" onclick="openSearch()"><i class="fas fa-search"></i></button>
+</div>
+
+<!-- navbar overlay search box -->
+<script>
+function openSearch() {
+    document.getElementById("mylayout").style.display = "block";
+}
+</script>
+<script>
+function closeSearch() {
+    document.getElementById("mylayout").style.display = "none";
+}
+</script>
+
+      </div>
       </div>
     </nav>
 </head>
-
 
 
 

@@ -7,14 +7,19 @@
       <input type="text" class="form-control" name="postTitle">
       <label for="exampleInputPassword1">Post</label>
       <textarea name="postBody" class="form-control" rows="15" cols="50"></textarea>
-    <label for="select-category">Category</label>
-    <select class="custom-select" id="category" required>
+    <label for="select-category" name="postCategory">Category</label>
+    <select class="custom-select postCategory" id="category" required>
       <option value>Choose...</option>
-      <option>blog</option>
-      <option>share</option>
+      <option>aa</option>
+      <option>bb</option>
+      <option>cc</option>
+      <option>dd</option>
+      <option>no category</option>
     </select>
     <div class="invalid-feedback">Please select a valid category.
     </div>
+      <label for="example-date-input" class="col-form-label">Date</label>
+    <input type="date" class="form-control" name="postDate">
   </div>
 
     <button type="submit" class="btn btn-dark">Publish</button>
