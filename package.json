@@ -12,6 +12,9 @@
   },
   "author": "Stella Lee",
   "license": "ISC",
+  "engines": {
+    "node": "12.18.4"
+  },
   "bugs": {
     "url": "https://github.com/Jestella/blog/issues"
   },
