@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 
 const homeStartingContent = "Hi! This is a main page.";
 const aboutStartingContent = "Hi! This is an about page.";
-const workStartingContent = "WORK | PROJECT";
+const workStartingContent = "2021 - PRESENT";
 const blogStartingContent = "Hi! This is a blog page.";
 
 const app = express();
@@ -20,12 +20,13 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
-mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-stella:test123@cluster0.g5pmv.mongodb.net/blogDB?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
 
 const postSchema = new mongoose.Schema ({
  title: String,
  content: String,
- date: String
+ date: String,
+ category: String
 });
 
 
@@ -47,6 +48,10 @@ app.get("/work", function(req, res){
   res.render("work", {startingContent: workStartingContent});
 });
 
+app.get("/lab", function(req, res){
+  res.render("lab");
+});
+
 app.get("/blog", function(req, res){
   res.render("blog", {
     startingContent: blogStartingContent,
@@ -62,7 +67,8 @@ app.post("/compose", function(req, res){
   const post = new Post ({
     title: req.body.postTitle,
     content: req.body.postBody,
-    date: req.body.postDate
+    date: req.body.postDate,
+    category: req.body.postCategory
   });
 
 
@@ -83,11 +89,14 @@ app.get("/posts/:postName", function(req, res){
       res.render("post", {
         title: post.title,
         content: post.content,
-        date: post.date
+        date: post.date,
+        category: post.category
       });
 }
   });
 });
+
+
 
 
 

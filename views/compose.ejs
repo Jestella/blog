@@ -1,7 +1,7 @@
 
 <%- include('partials/header'); -%>
-  <h1 class="title">Compose</h1>
-  <form class="" action="/compose" method="post">
+  <h1 class="title pagetop">Compose</h1>
+  <form class="compose-form" action="/compose" method="post">
     <div class="form-group">
       <label for="exampleInputEmail1">Title</label>
       <input type="text" class="form-control" name="postTitle">
@@ -10,16 +10,16 @@
     <label for="select-category" name="postCategory">Category</label>
     <select class="custom-select postCategory" id="category" required>
       <option value>Choose...</option>
-      <option>aa</option>
-      <option>bb</option>
-      <option>cc</option>
-      <option>dd</option>
-      <option>no category</option>
+      <option class="postCategory">book</option>
+      <option class="postCategory">coding</option>
+      <option class="postCategory">design</option>
+      <option class="postCategory">finance</option>
+      <option class="postCategory">no category</option>
     </select>
     <div class="invalid-feedback">Please select a valid category.
     </div>
       <label for="example-date-input" class="col-form-label">Date</label>
-    <input type="date" class="form-control" name="postDate">
+    <input type="date" class="form-control" name="postDate" required>
   </div>
 
     <button type="submit" class="btn btn-dark">Publish</button>
