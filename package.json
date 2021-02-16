@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "personal blog and portfolio",
   "main": "app.js",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,23 +17,8 @@
   },
   "author": "Stella Lee",
   "license": "ISC",
-  "engines": {
-    "node": "12.18.4"
-  },
   "bugs": {
     "url": "https://github.com/Jestella/blog/issues"
   },
-  "homepage": "https://github.com/Jestella/blog#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "init": "^0.1.2",
-    "lodash": "^4.17.20",
-    "mongoose": "^5.11.13"
-  },
-  "devDependencies": {},
-  "keywords": [
-    "blog"
-  ]
+  "homepage": "https://github.com/Jestella/blog#readme"
 }

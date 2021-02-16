@@ -1,7 +1,7 @@
 /* color
 pink-purple: #ffb4b4 #ff8e71  #b088f9
 grey: #ebebeb  #6e6d6d  #373a40 #262626
-green: #cfdac8  #adeecf #8ad7c1 #51c2d5 #214252
+green: #cfdac8 #d9e4dd #adeecf #8ad7c1 #51c2d5 #214252
 yellow: #fddb3a
 brown: #f0e2d0 #aa8976
 
@@ -88,8 +88,7 @@ body {
 .navbar,
 .blog-post,
 .compose-form,
-.home-blog-content,
-.about-content1 {
+.home-blog-content {
   text-align: left;
 }
 
@@ -136,94 +135,6 @@ body ::selection {
 
 
 
-
-/* loader */
-.lds-default {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-default div {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: #fff;
-  border-radius: 50%;
-  animation: lds-default 1.2s linear infinite;
-}
-.lds-default div:nth-child(1) {
-  animation-delay: 0s;
-  top: 37px;
-  left: 66px;
-}
-.lds-default div:nth-child(2) {
-  animation-delay: -0.1s;
-  top: 22px;
-  left: 62px;
-}
-.lds-default div:nth-child(3) {
-  animation-delay: -0.2s;
-  top: 11px;
-  left: 52px;
-}
-.lds-default div:nth-child(4) {
-  animation-delay: -0.3s;
-  top: 7px;
-  left: 37px;
-}
-.lds-default div:nth-child(5) {
-  animation-delay: -0.4s;
-  top: 11px;
-  left: 22px;
-}
-.lds-default div:nth-child(6) {
-  animation-delay: -0.5s;
-  top: 22px;
-  left: 11px;
-}
-.lds-default div:nth-child(7) {
-  animation-delay: -0.6s;
-  top: 37px;
-  left: 7px;
-}
-.lds-default div:nth-child(8) {
-  animation-delay: -0.7s;
-  top: 52px;
-  left: 11px;
-}
-.lds-default div:nth-child(9) {
-  animation-delay: -0.8s;
-  top: 62px;
-  left: 22px;
-}
-.lds-default div:nth-child(10) {
-  animation-delay: -0.9s;
-  top: 66px;
-  left: 37px;
-}
-.lds-default div:nth-child(11) {
-  animation-delay: -1s;
-  top: 62px;
-  left: 52px;
-}
-.lds-default div:nth-child(12) {
-  animation-delay: -1.1s;
-  top: 52px;
-  left: 62px;
-}
-@keyframes lds-default {
-  0%, 20%, 80%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-}
-
-.hide-loader{
-  display: none;
-}
 
 
 /*************** Header ***************/
@@ -308,7 +219,6 @@ body ::selection {
     border: 0;
     outline: 0;
     line-height: 35px;
-    cursor: pointer;
     color: #262626;
     background-color:transparent;
 }
@@ -452,8 +362,9 @@ body ::selection {
   padding: 3% 0 15%;
 }
 
-.home-blog-top {
+.home-toptitle {
   padding: 23% 0 3%;
+  color: #d9e4dd;
 }
 
 .home-blog-title {
@@ -472,13 +383,13 @@ body ::selection {
   background-color: #ebebeb;
   position: inherit;
   border: 1px solid #fff;
-  border-left: 6px solid #cfdac8;
+  border-left: 6px solid #d9e4dd;
   opacity: .85;
   padding: 5% 2%;
 }
 
 .card-box:hover {
-  background: #cfdac8;
+  background: #d9e4dd;
   transform: scale(1.02);
 }
 
@@ -492,40 +403,23 @@ body ::selection {
 /*************** About Page ***************/
 
 .about {
-  padding: 20% 0 0;
+  padding: 15% 0 0;
 }
 
 .about-content1 {
   padding: 2% 12% 8%;
 }
 
-.about-profile-image {
-  width:9.2rem;
-}
-
-.about-profile-image:hover {
-  transform: rotate(3deg);
-}
-
-.about-title {
-  padding: 2% 1.2% 10%;
-}
-
-.about-list1 {
-  padding: 3% 0;
-  font-weight: 500;
-  color: #6e6d6d;
-}
-
 .about-span {
-  color: #51c2d5;
+  color: #8ad7c1;
 }
 
 .between {
   color: #ebebeb;
 }
 
-.about-list2, .about-list3 {
+
+.about-list2 {
   padding: 6% 0 12%;
 }
 
@@ -535,7 +429,7 @@ body ::selection {
 }
 
 .underline {
-  background-image: linear-gradient(90deg, #cfdac8 0%, #51c2d5 100%);
+  background-image: linear-gradient(90deg, #cfdac8 0%, #8ad7c1 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
@@ -672,7 +566,7 @@ footer {
 /* responsive */
 
 /* responsive text */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
 .fixed-top {
   position: relative;
