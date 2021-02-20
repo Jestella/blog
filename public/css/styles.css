@@ -492,7 +492,7 @@ hr.line1 {
 /*************** Blog page ***************/
 
 .blog-post {
-  padding: 0 5% 0 2%;
+  padding: 0 5% 100% 2%;
 }
 
 .blog-title {
@@ -541,9 +541,9 @@ hr.line1 {
 /***** Footer Section *****/
 
 footer {
-  padding: 2%;
+  padding: 0 0 2%;
   background-color: default;
-  position: sticky;
+  position: relative;
 }
 
 .footer-text {
@@ -573,7 +573,7 @@ footer {
 }
 
 .video-header {
-  padding: 23% 0 0;
+  padding: 26% 0 0;
 }
 
 .text-main1 {
@@ -581,7 +581,7 @@ footer {
 }
 
 .text-main2 {
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .jieun {
@@ -590,7 +590,10 @@ footer {
   padding-left: 2%;
 }
 
-.blog-sidebar {
+.blog-sidebar,
+.cursor {
   display: none;
 }
+
+
 }
