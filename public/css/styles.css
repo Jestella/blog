@@ -1,5 +1,5 @@
 /* color
-pink-purple: #ffb4b4 #ff8e71  #b088f9
+pink-purple: #F3EAE6 #ffb4b4 #ff8e71
 grey: #ebebeb  #6e6d6d  #373a40 #262626
 green: #cfdac8 #d9e4dd #adeecf #8ad7c1 #51c2d5 #214252
 yellow: #fddb3a
@@ -45,7 +45,8 @@ font-family: 'Playfair Display', serif;
 }
 
 .text-main2,
-.social-icon {
+.social-icon,
+.home-portfolio-text {
   font-size: 1.42rem;
 }
 
@@ -62,9 +63,6 @@ font-family: 'Playfair Display', serif;
   font-size: .9rem;
   }
 
-body {
-  font-size: .88rem;
-  }
 
 .navbar-brand,
 .searchbar-input,
@@ -76,11 +74,11 @@ body {
 }
 
 .navbar {
-  font-size: .75rem;
+  font-size: .8rem;
 }
 
 .home-readmore-btn {
-  font-size: .6rem;
+  font-size: .6.5rem;
 }
 
 
@@ -114,6 +112,7 @@ body {
   cursor: none;
   text-align: center;
   font-family: sans-serif;
+  font-size: 13px;
 }
 
 body ::selection {
@@ -235,7 +234,7 @@ body ::selection {
 .cursor {
   width: 10px;
   height: 10px;
-  border: 5px solid #fddb3a;
+  border: 5px solid #aa8976;
   border-radius: 50%;
   position: absolute;
   transition-duration: 100ms;
@@ -420,7 +419,9 @@ body ::selection {
 
 
 .about-list2 {
-  padding: 6% 0 12%;
+  padding: 6% 0;
+  margin-top: 20%;
+  background-color: #d9e4dd;
 }
 
 .about-webdeveloper {

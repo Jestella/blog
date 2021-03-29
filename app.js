@@ -6,6 +6,9 @@ const ejs = require("ejs");
 const _ = require('lodash');
 const mongoose = require("mongoose");
 
+const React = require("react");
+const ReactDom = require("react-dom");
+
 
 const homeStartingContent = "Hi! This is a main page.";
 const aboutStartingContent = "Hi! This is an about page.";
@@ -97,16 +100,6 @@ app.get("/posts/:postName", function(req, res){
 });
 
 
-
-
-
-//navbar overlay search box
-function openSearch() {
-    document.getElementById("mylayout").style.display = "block";
-}
-function closeSearch() {
-    document.getElementById("mylayout").style.display = "none";
-}
 
 
 
