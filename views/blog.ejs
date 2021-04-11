@@ -7,51 +7,45 @@
 <!--------- main ---------->
 
 <div class="col-md-10 pagetop">
-
   <div class="blog-post">
 
-<%  posts.forEach(function(post){ %>
-
-<h2 class="blog-title"><%=post.title%></h2>
-<p><%=post.date%> by Stella </p>
-<p><%=post.categoryName%></p>
-<p class="blog-content">
-  <%=post.content%>
-</p>
-<%  }) %>
-</div>
+  <%  posts.forEach(function(post){ %>
+  <h2 class="blog-title"><%=post.title%></h2>
+  <p><%=post.date%> by Stella </p>
+  <p><%=post.categoryName%></p>
+  <p class="blog-content">
+    <%=post.content%>
+  </p>
+  <%  }) %>
+  </div>
 </div>
 
 
 <!---------- side -------------->
 
 <aside class="col-sm-2 blog-sidebar pagetop">
-  <div class="profile">
-<img src="profile.jpg" class="profile-image">
+  <div class="profile"><img src="css/images/profile.jpg" class="profile-image">
     </div>
   <div class="p-4 mb-2 bg-light">
     <h5>About</h5>
     <p class="blog-about">
-    #self-taught<br>#frontend<br>#webdeveloper</p>
+    <i class="fas fa-map-pin"></i> Toronto<br>
+  Front End Developer</p>
   </div>
   <div class="blog-nav p-4">
     <h5>category</h5>
 
-
-<div class="blog-side">
-
-    <nav class="blog-nav-category">
-      <a href="#a" class="verticals-listitem-link">all</a><br>
-      <a href="#b" class="verticals-listitem-link">a</a><br>
-      <a href="#c" class="verticals-listitem-link">b</a><br>
-      <a href="#d" class="verticals-listitem-link">c</a><br>
-      <a href="#e" class="verticals-listitem-link">d</a>
-    </nav>
+  <div class="blog-side">
+      <nav class="blog-nav-category">
+        <a href="#all" class="verticals-listitem-link">All</a><br>
+        <a href="#category_1" class="verticals-listitem-link">HTML/CSS</a><br>
+        <a href="#category_2" class="verticals-listitem-link">Bootstrap</a><br>
+        <a href="#category_3" class="verticals-listitem-link">JavaScript</a><br>
+        <a href="#category_4" class="verticals-listitem-link">Python</a>
+      </nav>
+    </div>
   </div>
-</div>
 </aside>
-
-
 </div>
 </main>
 
