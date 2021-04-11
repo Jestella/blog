@@ -9,11 +9,10 @@ const mongoose = require("mongoose");
 const React = require("react");
 const ReactDom = require("react-dom");
 
-
-const homeStartingContent = "Hi! This is a main page.";
-const aboutStartingContent = "Hi! This is an about page.";
-const workStartingContent = "2021 - PRESENT";
 const blogStartingContent = "Hi! This is a blog page.";
+const homeStartingContent = "Hi! This is a main page.";
+const workStartingContent = "Hi! This is a work page.";
+const labStartingContent = "Hi! This is a lab page.";
 
 const app = express();
 
@@ -38,13 +37,14 @@ const Post = mongoose.model("Post", postSchema);
 
 let posts = [];
 
-
 app.get("/", function(req, res){
   res.render("home", {startingContent: homeStartingContent});
 });
 
-app.get("/about", function(req, res){
-  res.render("about", {startingContent: aboutStartingContent});
+app.get("/blog", function(req, res){
+  res.render("blog", {
+    startingContent: blogStartingContent,
+    posts: posts});
 });
 
 app.get("/work", function(req, res){
@@ -52,13 +52,7 @@ app.get("/work", function(req, res){
 });
 
 app.get("/lab", function(req, res){
-  res.render("lab");
-});
-
-app.get("/blog", function(req, res){
-  res.render("blog", {
-    startingContent: blogStartingContent,
-    posts: posts});
+res.render("lab", {startingContent: labStartingContent});
 });
 
 app.get("/compose", function(req, res){
@@ -74,13 +68,9 @@ app.post("/compose", function(req, res){
     category: req.body.postCategory
   });
 
-
-
 posts.unshift(post);
 res.redirect("/blog");
 });
-
-
 
 app.get("/posts/:postName", function(req, res){
   const requestedTitle = _.lowerCase(req.params.postName);
@@ -98,9 +88,6 @@ app.get("/posts/:postName", function(req, res){
 }
   });
 });
-
-
-
 
 
 let port = process.env.PORT;
