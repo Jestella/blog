@@ -4,6 +4,7 @@ A simple blog website built with ejs.
 
 
 # Demo
+<img width="1431" alt="blog_img1" src="https://user-images.githubusercontent.com/31642902/114458503-46899000-9bad-11eb-8f50-4a3cee818d93.png">
 
 
 # Technologies used
