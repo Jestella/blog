@@ -15,7 +15,7 @@ A simple blog website built with ejs.
 </ul>
 
 # Project setup
-Server starts on localhost 3000
+Server starts on localhost 3000 <br>
 You can create a post on http://project1-blog.herokuapp.com/compose 
 
 
