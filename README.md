@@ -1,6 +1,6 @@
 # 🖋 BLOG, STORY
 
-A simple blog website built with ejs.
+A simple blog website built with ejs.<br>
 
 
 # Demo
