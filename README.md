@@ -39,5 +39,5 @@ You can write a post on http://project1-blog.herokuapp.com/compose
 
 
 # Known issues 
-I created a database for posts with MongoDB, but it doesn't seem to work. I am still working on it.
+I created a database for posts with MongoDB, but it doesn't work yet. I am still working on it.
 
