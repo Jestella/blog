@@ -1,13 +1,13 @@
-/* color
-pink-purple: #F3EAE6 #ffb4b4 #ff8e71
-grey: #ebebeb  #6e6d6d  #373a40 #262626
-green:  #d9e4dd #adeecf #8ad7c1 #51c2d5 #214252
-yellow: #fddb3a
-brown: #f0e2d0 #aa8976
-*/
 :root {
-  --black: #262626,
-
+  --grey_light: #ebebeb;
+  --grey: #6e6d6d;
+  --grey_dark: #373a40;
+  --black_light: #262626;
+  --green_light: #bdd2b6;
+  --green_dark: #adeecf;
+  --yellow: #fddb3a;
+  --beige_light: #f0e2d0;
+  --beight_dark: #aa8976;
 }
 
 /* font
@@ -16,21 +16,20 @@ font-family: 'Open Sans', sans-serif; 400, 400i, 600, 600i
 font-family: 'Playfair Display', serif; 500, 600, 700
 */
 
-/* font-family: 'Open Sans', sans-serif; */
-.navbar-brand, .main_description, h1 {
+.navbar-brand, .main-description, .page-title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-}
-
-.main_title,
-.about-webdeveloper {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 700;
 }
 
 .section-title {
 font-family: 'Playfair Display', serif;
 }
+
+.main-title {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -40,13 +39,16 @@ body {
   background-color: #fff;
   height: 100vh;
   text-align: center;
-  font-family: sans-serif;
   font-size: 13px;
 }
 
 body ::selection {
-  color: #fddb3a;
+  color: var(--yellow);
   background: #000;
+}
+
+a {
+  color: inherit;
 }
 
 .container-fluid {
@@ -60,13 +62,8 @@ body ::selection {
   text-align: left;
 }
 
-.page_header {
-  color: #373a40;
-  padding: 3% 0;
-}
-
-a {
-  color: inherit;
+.page-top {
+  padding: 3rem 0;
 }
 
 
@@ -127,7 +124,7 @@ a {
 .searchbar-input::-webkit-input-placeholder {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
-  color: #6e6d6d;
+  color: var(--grey);
   opacity: .6;
 }
 
@@ -157,7 +154,7 @@ a {
     outline: 0;
     line-height: 35px;
     font-size: .85rem;
-    color: #262626;
+    color: var(--black_light);
     background-color:transparent;
 }
 
@@ -184,94 +181,85 @@ a {
   z-index: -1;
 }
 
-.main_header {
+.main-header {
   padding: 6% 0 4%;
+  position: inherit;
 }
 
-.title {
-  font-size: 2.5rem;
-}
-
-.main_title {
+.main-title {
   font-size: 11rem;
-    /* Fallback: Set a background color. */
   background-color: #fff;
-    /* Create the gradient. */
   background-image: radial-gradient( circle farthest-corner at 10% 20%, #f0e2d0 0%, #a3d2ca 100.7% );
-
-  /* Set the background size and repeat properties. */
   background-size: 100%;
   background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-
   padding-bottom: 3%;
   opacity: .93;
 }
 
-.main_description {
+.main-description {
   font-size: 1.45rem;
-  color: #6e6d6d;
+  color: var(--grey);
 }
 
 
 
 /*************** Home Section2 prologue ***************/
+.section-title {
+padding: 5% 0 3%;
+color: var(--green_light);
+}
 
-
-.prologue {
+.prologue-container {
   display: flex;
   justify-content: center;
+  padding: 5% 0;
   background-color: #fff;
   color: #000;
   opacity: .9;
-  margin: 0 .3%;
-  border-left: 8px solid #d9e4dd;
+  margin: 0 0 10%;
+  border-left: 8px solid var(--green_light);
 }
 
-.prologue_title {
+.prologue-title {
   padding: 2rem 0 1rem;
 }
 
-.prologue_ul {
+.prologue-ul {
   padding-left: 25%;
   font-size: 1.1rem;
   text-align: left;
 }
 
-.prologue_1 {
+.prologue1 {
  grid-template-rows: 2fr 1fr 1fr 4fr;
  padding: 5%;
 }
 
-.prologue_2 {
+.prologue2 {
    grid-template-rows: 2fr 1fr 1fr 4fr;
    padding: 5%;
 }
 
-.prologe_img {
+.prologe-img {
   max-height: 20rem;
   max-width: 100%;
-
 }
 
-.course_link {
+.course-link {
   font-size: .9rem;
   color: #fff;
 }
 
 .udemy {
-  background: #aa8976
-;
+  background: var(--beige_dark);
 }
 
 .coursera {
-  background: #adeecf;
+  background: var(--green_dark);
 }
 
 /*************** Home Section3 Blog ***************/
@@ -281,14 +269,8 @@ a {
   padding: 3% 0 15%;
 }
 
-.home-toptitle {
-  padding: 23% 0 3%;
-  color: #bdd2b6;
-}
-
-
 .home-blog-title {
-  color: #262626;
+  color: var(--black_light);
 }
 
 .home-blog-content {
@@ -301,24 +283,23 @@ a {
   font-size: .6.5rem;
 }
 
-
 .card-box {
-  background-color: #ebebeb;
+  background-color: var(--grey_light);
   position: inherit;
   border: 1px solid #fff;
-  border-left: 8px solid #d9e4dd;
+  border-left: 8px solid var(--green_light);
   opacity: .85;
   padding: 5% 2%;
 }
 
 .card-box:hover {
-  background: #d9e4dd;
+  background: var(--green_light);
   transform: scale(1.02);
 }
 
 .btn:hover {
   transform: scale(1.1);
-  color: #6e6d6d;
+  color: var(--grey);
 }
 
 
@@ -327,7 +308,7 @@ a {
 /************** Work Page ***************/
 
 
-.portfolio {
+.work {
   padding: 25% 10%;
 }
 
@@ -336,7 +317,7 @@ a {
 }
 
 .work2 {
-  background-color: #d9e4dd;
+  background-color: var(--green_light);
 }
 
 
@@ -356,7 +337,7 @@ a {
 
 .blog-title {
   padding: 5% 0 0;
-  border-top: dotted 4px #ebebeb;
+  border-top: dotted 4px var(--grey_light);
 }
 
 .blog-content {
@@ -379,6 +360,10 @@ a {
   border-radius: 50%;
 }
 
+.blog-category {
+  padding: 10% 0 0;
+}
+
 .pagination {
   padding: 7% 0 0;
   position: absolute;
@@ -387,14 +372,17 @@ a {
 
 
 
+/**** Post Page *****/
 
+.post-title {
+  font-size: 2.5rem;
+}
 
 /**** Compose Page *****/
 
 .form-group {
   padding: 0 0 2%;
 }
-
 
 
 /***** Footer Section *****/
@@ -414,35 +402,33 @@ footer {
   text-align: right;
   font-size: 1.5rem;
   padding: 0 3% 0 0;
-  color: #ebebeb;
+  color: var(--grey_light);
 }
 
 .local-scroll:hover {
-  color: #262626;
+  color: var(--black_light);
 }
-
 
 
 
 /* responsive */
-@media (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 
-
-@media (max-width: 768px) {
-
-
-.main_header {
-  font-size: 5.5rem;
+.main-header {
+  padding-top: 35%;
 }
 
-.main_description {
+.main-title {
+  font-size: 7.5rem;
+}
+
+.main-description {
   font-size: 1rem;
 }
 
 .blog-sidebar {
   display: none;
 }
-
 }
 
 
@@ -452,7 +438,7 @@ footer {
 /* .cursor {
   width: 10px;
   height: 10px;
-  border: 5px solid #aa8976;
+  border: 5px solid var(--beige_dark);
   border-radius: 50%;
   position: absolute;
   transition-duration: 100ms;
@@ -482,7 +468,7 @@ footer {
 
 .expand {
   animation: cursorAnim3 .5s forwards;
-  border: 5px solid #262626;
+  border: 5px solid var(--black_light);
 }
 
 @keyframes cursorAnim3 {
