@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --grey_light: #ebebeb;
   --grey: #6e6d6d;
@@ -8,6 +9,18 @@
   --yellow: #fddb3a;
   --beige_light: #f0e2d0;
   --beight_dark: #aa8976;
+=======
+/* color
+pink-purple: #F3EAE6 #ffb4b4 #ff8e71
+grey: #ebebeb  #6e6d6d  #373a40 #262626
+green:  #d9e4dd #adeecf #8ad7c1 #51c2d5 #214252
+yellow: #fddb3a
+brown: #f0e2d0 #aa8976
+*/
+:root {
+  --black: #262626,
+
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 }
 
 /* font
@@ -16,21 +29,38 @@ font-family: 'Open Sans', sans-serif; 400, 400i, 600, 600i
 font-family: 'Playfair Display', serif; 500, 600, 700
 */
 
+<<<<<<< HEAD
 .navbar-brand, .main-description, .page-title {
+=======
+/* font-family: 'Open Sans', sans-serif; */
+.navbar-brand, .main_description, h1 {
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 
+<<<<<<< HEAD
+=======
+.main_title,
+.about-webdeveloper {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 .section-title {
 font-family: 'Playfair Display', serif;
 }
 
+<<<<<<< HEAD
 .main-title {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
 }
 
 
+=======
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 html {
   scroll-behavior: smooth;
 }
@@ -62,10 +92,22 @@ a {
   text-align: left;
 }
 
+<<<<<<< HEAD
 .page-top {
   padding: 3rem 0;
 }
 
+=======
+.page_header {
+  color: #373a40;
+  padding: 3% 0;
+}
+
+a {
+  color: inherit;
+}
+
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 
 /*************** Header ***************/
 
@@ -154,7 +196,11 @@ a {
     outline: 0;
     line-height: 35px;
     font-size: .85rem;
+<<<<<<< HEAD
     color: var(--black_light);
+=======
+    color: #262626;
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
     background-color:transparent;
 }
 
@@ -181,15 +227,34 @@ a {
   z-index: -1;
 }
 
+<<<<<<< HEAD
 .main-header {
+=======
+.main_header {
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
   padding: 6% 0 4%;
   position: inherit;
 }
 
+<<<<<<< HEAD
 .main-title {
   font-size: 11rem;
   background-color: #fff;
   background-image: radial-gradient( circle farthest-corner at 10% 20%, #f0e2d0 0%, #a3d2ca 100.7% );
+=======
+.title {
+  font-size: 2.5rem;
+}
+
+.main_title {
+  font-size: 11rem;
+    /* Fallback: Set a background color. */
+  background-color: #fff;
+    /* Create the gradient. */
+  background-image: radial-gradient( circle farthest-corner at 10% 20%, #f0e2d0 0%, #a3d2ca 100.7% );
+
+  /* Set the background size and repeat properties. */
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -200,13 +265,23 @@ a {
   opacity: .93;
 }
 
+<<<<<<< HEAD
 .main-description {
   font-size: 1.45rem;
   color: var(--grey);
 }
+=======
+.main_description {
+  font-size: 1.45rem;
+  color: #6e6d6d;
+}
+
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 
 
+/*************** Home Section2 prologue ***************/
 
+<<<<<<< HEAD
 /*************** Home Section2 prologue ***************/
 .section-title {
 padding: 5% 0 3%;
@@ -260,6 +335,57 @@ color: var(--green_light);
 
 .coursera {
   background: var(--green_dark);
+=======
+
+.prologue {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  opacity: .9;
+  margin: 0 .3%;
+  border-left: 8px solid #d9e4dd;
+}
+
+.prologue_title {
+  padding: 2rem 0 1rem;
+}
+
+.prologue_ul {
+  padding-left: 25%;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.prologue_1 {
+ grid-template-rows: 2fr 1fr 1fr 4fr;
+ padding: 5%;
+}
+
+.prologue_2 {
+   grid-template-rows: 2fr 1fr 1fr 4fr;
+   padding: 5%;
+}
+
+.prologe_img {
+  max-height: 20rem;
+  max-width: 100%;
+
+}
+
+.course_link {
+  font-size: .9rem;
+  color: #fff;
+}
+
+.udemy {
+  background: #aa8976
+;
+}
+
+.coursera {
+  background: #adeecf;
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 }
 
 /*************** Home Section3 Blog ***************/
@@ -269,6 +395,15 @@ color: var(--green_light);
   padding: 3% 0 15%;
 }
 
+<<<<<<< HEAD
+=======
+.home-toptitle {
+  padding: 23% 0 3%;
+  color: #bdd2b6;
+}
+
+
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 .home-blog-title {
   color: var(--black_light);
 }
@@ -283,11 +418,16 @@ color: var(--green_light);
   font-size: .6.5rem;
 }
 
+
 .card-box {
   background-color: var(--grey_light);
   position: inherit;
   border: 1px solid #fff;
+<<<<<<< HEAD
   border-left: 8px solid var(--green_light);
+=======
+  border-left: 8px solid #d9e4dd;
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
   opacity: .85;
   padding: 5% 2%;
 }
@@ -299,7 +439,11 @@ color: var(--green_light);
 
 .btn:hover {
   transform: scale(1.1);
+<<<<<<< HEAD
   color: var(--grey);
+=======
+  color: #6e6d6d;
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 }
 
 
@@ -406,12 +550,18 @@ footer {
 }
 
 .local-scroll:hover {
+<<<<<<< HEAD
   color: var(--black_light);
+=======
+  color: #262626;
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 }
 
 
 
+
 /* responsive */
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
 
 .main-header {
@@ -428,17 +578,45 @@ footer {
 
 .blog-sidebar {
   display: none;
+=======
+@media (max-width: 1024px) {
+
+
+@media (max-width: 768px) {
+
+
+.main_header {
+  font-size: 5.5rem;
+}
+
+.main_description {
+  font-size: 1rem;
+}
+
+.blog-sidebar {
+  display: none;
+}
+
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 }
 }
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 /*************** Custom Cursor ***************/
 
 /* .cursor {
   width: 10px;
   height: 10px;
+<<<<<<< HEAD
   border: 5px solid var(--beige_dark);
+=======
+  border: 5px solid #aa8976;
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
   border-radius: 50%;
   position: absolute;
   transition-duration: 100ms;
@@ -468,7 +646,11 @@ footer {
 
 .expand {
   animation: cursorAnim3 .5s forwards;
+<<<<<<< HEAD
   border: 5px solid var(--black_light);
+=======
+  border: 5px solid #262626;
+>>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 }
 
 @keyframes cursorAnim3 {
