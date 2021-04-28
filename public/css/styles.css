@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-:root {
-  --grey_light: #ebebeb;
-  --grey: #6e6d6d;
-  --grey_dark: #373a40;
-  --black_light: #262626;
-  --green_light: #bdd2b6;
-  --green_dark: #adeecf;
-  --yellow: #fddb3a;
-  --beige_light: #f0e2d0;
-  --beight_dark: #aa8976;
-=======
 /* color
 pink-purple: #F3EAE6 #ffb4b4 #ff8e71
 grey: #ebebeb  #6e6d6d  #373a40 #262626
@@ -17,11 +5,6 @@ green:  #d9e4dd #adeecf #8ad7c1 #51c2d5 #214252
 yellow: #fddb3a
 brown: #f0e2d0 #aa8976
 */
-:root {
-  --black: #262626,
-
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
-}
 
 /* font
 font-family: 'Noto Sans KR', sans-serif; 400, 500, 700
@@ -29,38 +12,29 @@ font-family: 'Open Sans', sans-serif; 400, 400i, 600, 600i
 font-family: 'Playfair Display', serif; 500, 600, 700
 */
 
-<<<<<<< HEAD
+
 .navbar-brand, .main-description, .page-title {
-=======
-/* font-family: 'Open Sans', sans-serif; */
-.navbar-brand, .main_description, h1 {
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 
-<<<<<<< HEAD
-=======
 .main_title,
 .about-webdeveloper {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
 }
 
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 .section-title {
 font-family: 'Playfair Display', serif;
 }
 
-<<<<<<< HEAD
 .main-title {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
 }
 
 
-=======
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
+
 html {
   scroll-behavior: smooth;
 }
@@ -73,7 +47,7 @@ body {
 }
 
 body ::selection {
-  color: var(--yellow);
+  color: #fddb3a;
   background: #000;
 }
 
@@ -92,22 +66,16 @@ a {
   text-align: left;
 }
 
-<<<<<<< HEAD
 .page-top {
   padding: 3rem 0;
 }
 
-=======
+
 .page_header {
   color: #373a40;
   padding: 3% 0;
 }
 
-a {
-  color: inherit;
-}
-
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 
 /*************** Header ***************/
 
@@ -166,19 +134,14 @@ a {
 .searchbar-input::-webkit-input-placeholder {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
-  color: var(--grey);
+  color: #6e6d6d;
   opacity: .6;
 }
 
-.searchbar-input:-moz-placeholder {
-    color: #fff;
-}
-
-.searchbar-input::-moz-placeholder {
-    color: #fff;
-}
-
-.searchbar-input:-ms-input-placeholder {
+.searchbar-input:-moz-placeholder,
+.searchbar-input::-moz-placeholder,
+.searchbar-input:-ms-input-placeholder
+  {
     color: #fff;
 }
 
@@ -196,11 +159,7 @@ a {
     outline: 0;
     line-height: 35px;
     font-size: .85rem;
-<<<<<<< HEAD
-    color: var(--black_light);
-=======
     color: #262626;
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
     background-color:transparent;
 }
 
@@ -227,34 +186,15 @@ a {
   z-index: -1;
 }
 
-<<<<<<< HEAD
-.main-header {
-=======
 .main_header {
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
-  padding: 6% 0 4%;
+  padding: 7% 0 4%;
   position: inherit;
-}
-
-<<<<<<< HEAD
-.main-title {
-  font-size: 11rem;
-  background-color: #fff;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%, #f0e2d0 0%, #a3d2ca 100.7% );
-=======
-.title {
-  font-size: 2.5rem;
 }
 
 .main_title {
   font-size: 11rem;
-    /* Fallback: Set a background color. */
   background-color: #fff;
-    /* Create the gradient. */
   background-image: radial-gradient( circle farthest-corner at 10% 20%, #f0e2d0 0%, #a3d2ca 100.7% );
-
-  /* Set the background size and repeat properties. */
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -265,30 +205,19 @@ a {
   opacity: .93;
 }
 
-<<<<<<< HEAD
-.main-description {
-  font-size: 1.45rem;
-  color: var(--grey);
-}
-=======
 .main_description {
   font-size: 1.45rem;
   color: #6e6d6d;
 }
 
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 
-
-/*************** Home Section2 prologue ***************/
-
-<<<<<<< HEAD
 /*************** Home Section2 prologue ***************/
 .section-title {
 padding: 5% 0 3%;
-color: var(--green_light);
+color: #bdd2b6;
 }
 
-.prologue-container {
+.prologue {
   display: flex;
   justify-content: center;
   padding: 5% 0;
@@ -296,7 +225,7 @@ color: var(--green_light);
   color: #000;
   opacity: .9;
   margin: 0 0 10%;
-  border-left: 8px solid var(--green_light);
+  border-left: 8px solid #bdd2b6;
 }
 
 .prologue-title {
@@ -311,17 +240,16 @@ color: var(--green_light);
 
 .prologue1 {
  grid-template-rows: 2fr 1fr 1fr 4fr;
- padding: 5%;
 }
 
 .prologue2 {
-   grid-template-rows: 2fr 1fr 1fr 4fr;
-   padding: 5%;
+ grid-template-rows: 2fr 1fr 1fr 4fr;
 }
 
-.prologe-img {
+.prologue-img {
   max-height: 20rem;
   max-width: 100%;
+  border: 3px solid #fff;
 }
 
 .course-link {
@@ -330,63 +258,14 @@ color: var(--green_light);
 }
 
 .udemy {
-  background: var(--beige_dark);
-}
-
-.coursera {
-  background: var(--green_dark);
-=======
-
-.prologue {
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  color: #000;
-  opacity: .9;
-  margin: 0 .3%;
-  border-left: 8px solid #d9e4dd;
-}
-
-.prologue_title {
-  padding: 2rem 0 1rem;
-}
-
-.prologue_ul {
-  padding-left: 25%;
-  font-size: 1.1rem;
-  text-align: left;
-}
-
-.prologue_1 {
- grid-template-rows: 2fr 1fr 1fr 4fr;
- padding: 5%;
-}
-
-.prologue_2 {
-   grid-template-rows: 2fr 1fr 1fr 4fr;
-   padding: 5%;
-}
-
-.prologe_img {
-  max-height: 20rem;
-  max-width: 100%;
-
-}
-
-.course_link {
-  font-size: .9rem;
-  color: #fff;
-}
-
-.udemy {
-  background: #aa8976
-;
+  background: #aa8976;
 }
 
 .coursera {
   background: #adeecf;
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 }
+
+
 
 /*************** Home Section3 Blog ***************/
 
@@ -395,17 +274,13 @@ color: var(--green_light);
   padding: 3% 0 15%;
 }
 
-<<<<<<< HEAD
-=======
 .home-toptitle {
   padding: 23% 0 3%;
   color: #bdd2b6;
 }
 
-
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 .home-blog-title {
-  color: var(--black_light);
+  color: #262626;
 }
 
 .home-blog-content {
@@ -418,32 +293,24 @@ color: var(--green_light);
   font-size: .6.5rem;
 }
 
-
 .card-box {
-  background-color: var(--grey_light);
+  background-color: #ebebeb;
   position: inherit;
   border: 1px solid #fff;
-<<<<<<< HEAD
-  border-left: 8px solid var(--green_light);
-=======
-  border-left: 8px solid #d9e4dd;
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
+  border-left: 8px solid #bdd2b6;
   opacity: .85;
   padding: 5% 2%;
 }
 
 .card-box:hover {
-  background: var(--green_light);
+  background: #bdd2b6;
   transform: scale(1.02);
 }
 
 .btn:hover {
   transform: scale(1.1);
-<<<<<<< HEAD
-  color: var(--grey);
-=======
   color: #6e6d6d;
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
+
 }
 
 
@@ -461,16 +328,13 @@ color: var(--green_light);
 }
 
 .work2 {
-  background-color: var(--green_light);
+  background-color: #bdd2b6;
 }
 
-
-
-
-/*************** Lab Page ***************/
-
-
-
+.work p {
+  color: #fff;
+  font-size: .9rem;
+}
 
 
 /*************** Blog page ***************/
@@ -481,7 +345,7 @@ color: var(--green_light);
 
 .blog-title {
   padding: 5% 0 0;
-  border-top: dotted 4px var(--grey_light);
+  border-top: dotted 4px #ebebeb;
 }
 
 .blog-content {
@@ -528,6 +392,10 @@ color: var(--green_light);
   padding: 0 0 2%;
 }
 
+.title {
+  font-size: 2.5rem;
+}
+
 
 /***** Footer Section *****/
 
@@ -546,44 +414,18 @@ footer {
   text-align: right;
   font-size: 1.5rem;
   padding: 0 3% 0 0;
-  color: var(--grey_light);
+  color: #ebebeb;
 }
 
 .local-scroll:hover {
-<<<<<<< HEAD
-  color: var(--black_light);
-=======
   color: #262626;
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 }
 
 
 
 
 /* responsive */
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-
-.main-header {
-  padding-top: 35%;
-}
-
-.main-title {
-  font-size: 7.5rem;
-}
-
-.main-description {
-  font-size: 1rem;
-}
-
-.blog-sidebar {
-  display: none;
-=======
-@media (max-width: 1024px) {
-
-
 @media (max-width: 768px) {
-
 
 .main_header {
   font-size: 5.5rem;
@@ -596,27 +438,17 @@ footer {
 .blog-sidebar {
   display: none;
 }
-
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
-}
 }
 
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 /*************** Custom Cursor ***************/
 
-/* .cursor {
+.cursor {
   width: 10px;
   height: 10px;
-<<<<<<< HEAD
-  border: 5px solid var(--beige_dark);
-=======
   border: 5px solid #aa8976;
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
+
+  border: 5px solid #aa8976;
   border-radius: 50%;
   position: absolute;
   transition-duration: 100ms;
@@ -646,11 +478,7 @@ footer {
 
 .expand {
   animation: cursorAnim3 .5s forwards;
-<<<<<<< HEAD
-  border: 5px solid var(--black_light);
-=======
   border: 5px solid #262626;
->>>>>>> 72277e7301b0031844de7582201b3011b1533d1a
 }
 
 @keyframes cursorAnim3 {
@@ -664,4 +492,4 @@ footer {
     transform: scale(1);
     opacity: 0;
   }
-} */
+}
