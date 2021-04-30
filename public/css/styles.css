@@ -427,8 +427,9 @@ footer {
 /* responsive */
 @media (max-width: 768px) {
 
-.main_header {
-  font-size: 5.5rem;
+.main_title {
+  font-size: 7.5rem;
+  padding: 40% 0 0;
 }
 
 .main_description {
