@@ -51,13 +51,16 @@ body ::selection {
   background: #000;
 }
 
-a {
+a:link,
+a:visited {
   color: inherit;
+  text-decoration: none;
 }
 
 .container-fluid {
   padding: 2% 6%;
 }
+
 
 /* text-align | left */
 .blog-post,
@@ -308,7 +311,6 @@ color: #bdd2b6;
 }
 
 .btn:hover {
-  transform: scale(1.1);
   color: #6e6d6d;
 
 }
@@ -370,6 +372,10 @@ color: #bdd2b6;
 
 .blog-category {
   padding: 10% 0 0;
+}
+
+.blog_btn {
+  padding: 20% 0 0;
 }
 
 .pagination {
