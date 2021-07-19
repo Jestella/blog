@@ -37,6 +37,3 @@ Server starts on localhost 3000. <br>
 </ul>
 
 
-# Known issues 
-I created a database for posts with MongoDB, but it doesn't work yet. I am still working on it.
-
